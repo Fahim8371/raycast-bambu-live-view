@@ -4,11 +4,11 @@
   "title": "Bambu Live View",
   "description": "Tiny always-on-top live camera view of your Bambu Lab 3D printer, streamed over your local network with mpv.",
   "icon": "icon.png",
-  "author": "fahim",
+  "author": "girr_paan",
   "license": "MIT",
   "categories": [
-    "Applications",
-    "Media"
+    "Media",
+    "Productivity"
   ],
   "platforms": [
     "macOS"
@@ -103,6 +103,8 @@
     "build": "ray build -e dist -o dist",
     "dev": "ray develop",
     "fix-lint": "ray lint --fix",
-    "lint": "ray lint"
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the `prepublishOnly` script and rerun `npm publish` again.\\nIf you wanted to publish it to the Raycast Store instead, use `npm run publish` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
   }
 }

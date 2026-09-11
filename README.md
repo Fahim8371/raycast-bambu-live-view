@@ -67,8 +67,6 @@ npm run build    # ray build -e dist -o dist
 npm run lint
 ```
 
-This extension isn't published in the Raycast Store. To install it, clone this repo and run `npm install && npm run dev` once (or use Raycast's **Import Extension** command and pick the folder).
-
 ## License
 
 [MIT](LICENSE)
